@@ -3,7 +3,7 @@
 
 - name: pip install awscli
   pip: name=awscli state=latest
-  sudo: yes
+  become: yes
 
 - name: enable tab completion for awscli
   lineinfile:
