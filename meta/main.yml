@@ -1,8 +1,8 @@
 ---
 galaxy_info:
-  author: your name
-  description: 
-  company: your company (optional)
+  author: Sylvain Mougenot
+  description: role for installing awscli (fork from hyao/ansible-awscli to fix deprecation)
+#  company: your company (optional)
   # Some suggested licenses:
   # - BSD (default)
   # - MIT
@@ -11,19 +11,19 @@ galaxy_info:
   # - Apache
   # - CC-BY
   license: license (GPLv2, CC-BY, etc)
-  min_ansible_version: 1.2
+  min_ansible_version: 2.4
   #
   # Below are all platforms currently available. Just uncomment
   # the ones that apply to your role. If you don't see your 
   # platform on this list, let us know and we'll get it added!
   #
-  #platforms:
-  #- name: EL
-  #  versions:
+  platforms:
+  - name: EL
+    versions:
   #  - all
   #  - 5
-  #  - 6
-  #  - 7
+    - 6
+    - 7
   #- name: GenericUNIX
   #  versions:
   #  - all
@@ -65,8 +65,8 @@ galaxy_info:
   #  - 9.1
   #  - 9.1
   #  - 9.2
-  #- name: Ubuntu
-  #  versions:
+  - name: Ubuntu
+    versions:
   #  - all
   #  - lucid
   #  - maverick
@@ -76,7 +76,7 @@ galaxy_info:
   #  - quantal
   #  - raring
   #  - saucy
-  #  - trusty
+    - trusty
   #- name: SLES
   #  versions:
   #  - all
